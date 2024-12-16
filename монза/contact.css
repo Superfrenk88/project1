@@ -1,0 +1,23 @@
+.contacts{
+    display: flex;
+}
+.rab{
+    font-size: 20px;
+    margin-right: 30px;
+}
+.ceti{
+    font-size: 20px;
+    
+}
+.contact-geo{
+    font-size: 20px;
+}
+.map{
+    width: 400px;
+    height: 400px;
+    background-color: rgb(248, 247, 247);
+}
+.police{
+    display: flex;
+    font-size: 18px;
+}

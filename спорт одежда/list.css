@@ -1,0 +1,64 @@
+.nav-list {
+    z-index: 2;
+    display: none;
+    position: absolute;
+    
+    top: 100%;
+    background-color: rgb(255, 255, 255);
+
+    justify-content: center;
+    line-height: 50px;
+}
+
+
+.foots {
+
+    z-index: 2;
+}
+.foot {
+    
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+.foot:hover {
+    background-color: rgb(48, 47, 47);
+    color: rgb(248, 248, 248);
+}
+
+.foot {
+    width: 100px;
+    text-align: center;
+}
+
+.sale-tex {
+    border-style: none;
+    background-color: white;
+    cursor: pointer;
+    padding: 0;
+}
+
+.sale-text:hover {
+    border-style: solid;
+    border-color: black;
+    border-width: 4px;
+    border-top: 1px;
+    border-right: 1px;
+    border-left: 1px;
+
+    transition: transform 0.3s ease, border 0.2s ease;
+}
+
+.sale-tex:hover {
+    border-style: solid;
+    border-color: black;
+    border-width: 4px;
+    border-top: 1px;
+    border-right: 1px;
+    border-left: 1px;
+
+    transition: transform 0.3s ease, border 0.2s ease;
+}
+
+

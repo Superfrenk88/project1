@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Спорт одежда</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="carusel.css">
+    <link rel="stylesheet" href="list.css">
+    <link rel="stylesheet" href="pricing.css">
+    <script src="js.js" defer></script>
+</head>
+
+<body>
+
+
+
+
+    <header>
+
+        <div class="carusel-bar">
+            <div class="carousel">
+                <div class="slides">
+                    <div class="slide">Скидки первым клиентам 15%</div>
+                    <div class="slide">Мира 1!</div>
+                    <div class="slide">Купи 2 шмотки на 3 — 50% скидка!</div>
+                </div>
+
+                <div class="buttons">
+                    <button class="button" id="prevBtn"></button>
+                    <button class="button" id="nextBtn"></button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="geo-bar">
+            <div class="geolok-bar">
+                <div class="first-geo" style="display: flex; align-items: center;">
+                    <div class="geo-img"><img src="img/Yandex_Maps_icon.svg.png" alt=""></div>
+                    <div class="geo-text">Каспийск</div>
+                    <div class="nomer">8(967)942-37-84</div>
+                    <div class="coll">—— Сделать звонок!</div>
+                </div>
+
+
+                <div class="second-geo" style="display: flex; align-items: center;">
+                    <div class="vakan">Вакансии</div>
+                    <div class="magaz" style="padding-left: 15px;">О магазине</div>
+          
+
+
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div class="brend-bar">
+
+            <div class="brend-barmain">
+                <div class="first-brand">
+                    <div class="brand-tex" style="font-weight: 600;">Магазин</div>
+                    <div class="brand-text">Доставка и оплата</div>
+                    <div class="brand-text">Как купить</div>
+                </div>
+                <div class="logo"><img src="img/logo.svg" alt=""></div>
+                <div class="second-brand">
+                    <div class="brand-tex" style="font-weight: 600;">Инстаграм</div>
+                
+                    <div class="brand-text">Телеграм</div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="sale">
+            <div class="sale-main">
+                <div class="sale-first">
+                    <button class="sale-tex" style="font-weight: 600; font-size: 20px;"
+                        id="toggleButton">Мужчинам</button>
+
+                    <div class="sale-text">Женщинам</div>
+                    <div class="sale-text">Детям</div>
+                    <div class="sale-text">Виды спорта</div>
+                    <div class="sale-text">Бренды</div>
+                    <div class="sale-text-last" style="font-weight: 600; font-size: 24px;">Sale</div>
+                </div>
+                <div class="sale-second">
+
+                    <div class="sale-text">Каспийск. Ленина 15</div>
+                </div>
+                <div class="nav-list" style="z-index: 2;"  id="myList">
+                    <div class="foots" style="z-index: 2;">
+                    <a class="foot" href="pricing.html">Обувь</a>
+                    <a class="foot" href="">Обувь</a>
+                    <a class="foot" href="">Обувь</a>
+                    <a class="foot" href="">Обувь</a>
+                    <a class="foot" href="">Обувь</a>
+                       
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+
+        
+        
+       
+
+
+
+    </header>
+
+
+  
+
+
+   
+
+
+
+
+
+
+
+
+
+    <section>
+        <div class="content" >
+           
+
+            
+            <div class="carouse" style="z-index: 1;">
+                <div class="carouseinner" id="carouselImages">
+                    <div class="item active">
+                        <img src="img/image.png" alt="Изображение 1">
+                    </div>
+                    <div class="item">
+                        <img src="img/image 7.png" alt="Изображение 2">
+                    </div>
+                    <div class="item">
+                        <img src="img/image.png" alt="Изображение 3">
+                    </div>
+                </div>
+
+                <button class="carouse-control prev" onclick="prevSlide()">&#10094;</button>
+                <button class="carouse-control next" onclick="nextSlide()">&#10095;</button>
+                <div class="carouse-indicators">
+                    <span class="dot active" onclick="goToSlide(0)"></span>
+                    <span class="dot" onclick="goToSlide(1)"></span>
+                    <span class="dot" onclick="goToSlide(2)"></span>
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="brand-mains">
+            <div class="brands">
+                <div class="nike" style="padding-left: 20px;"><img src="img/17m701n2g8db52poonib8elzdhl3jy0o.png"
+                        alt=""></div>
+
+                <div class="bob"> <img src="img/Nike-110X55.png" alt=""></div>
+
+                <div class="nike"><img src="img/17m701n2g8db52poonib8elzdhl3jy0o.png" alt=""></div>
+                <div class="bob"> <img src="img/Nike-110X55.png" alt=""></div>
+                <div class="nike"><img src="img/17m701n2g8db52poonib8elzdhl3jy0o.png" alt=""></div>
+
+                <div class="bob" style="padding-right: 20px;"> <img src="img/Nike-110X55.png" alt=""></div>
+
+            </div>
+
+        </div>
+
+        
+
+    </section>
+
+
+
+
+
+
+
+    <footer></footer>
+
+    <script>
+        const slides = document.querySelector('.slides');
+        const totalSlides = document.querySelectorAll('.slide').length;
+        let currentIndex = 0;
+
+        document.getElementById('nextBtn').addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            updateSlidePosition();
+        });
+
+        document.getElementById('prevBtn').addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+            updateSlidePosition();
+        });
+
+        function updateSlidePosition() {
+            const offset = -currentIndex * 100;
+            slides.style.transform = `translateX(${offset}%)`;
+        }
+
+        // Автоматическое переключение слайдов
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            updateSlidePosition();
+        }, 5000);
+
+        let currentIndexx = 0;
+
+        function showSlide(index) {
+            const slides = document.querySelectorAll('.item');
+            const dots = document.querySelectorAll('.dot');
+
+            if (index >= slides.length) currentIndexx = 0;
+            if (index < 0) currentIndexx = slides.length - 1;
+
+            const newTransform = -currentIndexx * 100;
+            document.querySelector('.carouseinner').style.transform = `translateX(${newTransform}%)`;
+
+            dots.forEach(dot => dot.classList.remove('active'));
+            dots[currentIndexx].classList.add('active');
+
+        }
+
+        function nextSlide() {
+            currentIndexx++;
+            showSlide(currentIndexx);
+        }
+
+        function prevSlide() {
+            currentIndexx--;
+            showSlide(currentIndexx);
+        }
+
+        function goToSlide(index) {
+            currentIndexx = index;
+            showSlide(currentIndexx);
+        }
+
+
+
+
+        const carouselImages = document.getElementById('carouselImages');
+        const images = document.querySelectorAll('.item');
+        let currentIndexxx = 0;
+
+        function showNextImage() {
+            currentIndexxx = (currentIndexxx + 1) % images.length;
+            carouselImages.style.transform = `translateX(-${currentIndexxx * 100}%)`;
+
+        }
+
+        setInterval(showNextImage, 7000); // Изменение изображения каждые 3 секунды
+
+
+
+
+
+        function addToFavorites(button) {
+            const item = button.parentElement.querySelector('span').innerText;
+            const favoritesList = document.getElementById('favoritesList');
+
+            // Проверяем, добавлен ли товар уже в избранное
+            if (![...favoritesList.children].some(li => li.innerText === item)) {
+                const listItem = document.createElement('li');
+                listItem.innerText = item;
+
+                // Кнопка для удаления из избранного
+                const removeButton = document.createElement('button');
+                removeButton.innerText = 'Удалить';
+                removeButton.onclick = function () {
+                    favoritesList.removeChild(listItem);
+                    button.disabled = false; // Активируем кнопку обратно
+                    button.classList.remove('favorite');
+                    button.innerText = 'Добавить'; // Сбрасываем текст кнопки
+                };
+
+                listItem.appendChild(removeButton);
+                favoritesList.appendChild(listItem);
+
+                button.disabled = true; // Делаем кнопку неактивной
+                button.classList.add('favorite'); // Добавляем класс для стилизации
+                button.innerText = ''; // Меняем текст кнопки
+            } else {
+                alert('Этот товар уже в избранном!');
+            }
+        }
+
+    </script>
+
+</body>
+
+
+
+
+</html>

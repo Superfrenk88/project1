@@ -1,0 +1,14 @@
+.favorite-list{
+    
+}
+.it{
+    text-align: center;
+    cursor: pointer;
+    background-color: blanchedalmond;
+    display: none;
+}
+.it button{
+    
+    background-color: white;
+    cursor: pointer;
+}
