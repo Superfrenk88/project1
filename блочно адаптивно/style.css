@@ -2,8 +2,6 @@
     display: flex;
     margin-top: 40px;
     justify-content: center;
-   
-    
 }
 
 
@@ -11,16 +9,12 @@
     display: flex;
     justify-content: space-between;
     width: 800px;
-   
 }
 .wrap{
  display: flex;
- 
   justify-content: space-between;
- 
 }
-.wrap img{
-    
+.wrap img{ 
    width: 100%;
 }
 
